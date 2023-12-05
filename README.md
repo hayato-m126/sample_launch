@@ -17,6 +17,8 @@ Since autoware does not seem to specify forwarding attribute, the argument is fo
 If there is an argument with the same name and it is specified in the launch command, it may cause unexpected behavior.
 How do you check that there are no arguments with the same name when autoware consists of python, xml and multiple launches?
 
+![include_image](./include.jpg)
+
 ## install
 
 ```shell

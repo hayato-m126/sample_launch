@@ -17,6 +17,8 @@ autowareはforwarding属性指定していないようなので、引数がforwa
 名前が同じ引数があり、それをlaunchコマンドで指定した場合、想定しない挙動になる可能性がある。
 autowareはpythonとxmlと複数のlaunchで構成されているが同じ名前の引数がないことはどうやって確認しているのか？
 
+![include_image](./include.jpg)
+
 ## インストール
 
 ```shell
