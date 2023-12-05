@@ -1,0 +1,12 @@
+<launch>
+  <arg name="foo" default="ROOT"/>
+  <log message="$(var foo)"/>
+  <group forwarding="true"><include file="$(find-pkg-share sample_launch)/launch/node1.launch.xml"/></group>
+  <group forwarding="true"><include file="$(find-pkg-share sample_launch)/launch/node2.launch.xml"/></group>
+  <group forwarding="false"><include file="$(find-pkg-share sample_launch)/launch/node1.launch.xml"/></group>
+  <group forwarding="false"><include file="$(find-pkg-share sample_launch)/launch/node2.launch.xml"/></group>
+  <group forwarding="true"><include file="$(find-pkg-share sample_launch)/launch/node1.launch.xml"><arg name="foo" value="ROOT1"/></include></group>
+  <group forwarding="true"><include file="$(find-pkg-share sample_launch)/launch/node2.launch.xml"><arg name="foo" value="ROOT2"/></include></group>
+  <group forwarding="false"><include file="$(find-pkg-share sample_launch)/launch/node1.launch.xml"><arg name="foo" value="ROOT1"/></include></group>
+  <group forwarding="false"><include file="$(find-pkg-share sample_launch)/launch/node2.launch.xml"><arg name="foo" value="ROOT2"/></include></group>
+</launch>

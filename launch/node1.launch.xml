@@ -1,0 +1,4 @@
+<launch>
+  <arg name="foo" default="NODE1"/>
+  <log message="$(var foo)"/>
+</launch>
