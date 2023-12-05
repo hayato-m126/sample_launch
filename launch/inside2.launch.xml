@@ -1,0 +1,4 @@
+<launch>
+  <arg name="test_arg" default="2"/>
+  <log message="include2 has $(var test_arg)"/>
+</launch>

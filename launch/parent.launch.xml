@@ -1,0 +1,7 @@
+<launch>
+  <arg name="foo" default="parent_foo"/>
+  <arg name="bar" default="parent_bar"/>
+  <include file="$(find-pkg-share sample_launch)/launch/child.launch.xml" >
+    <arg name="foo" value="$(var foo)"/>
+  </include>
+</launch>

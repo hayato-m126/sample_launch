@@ -1,0 +1,8 @@
+<launch>
+  <group>
+    <include file="$(find-pkg-share sample_launch)/launch/inside1.launch.xml"/>
+  </group>
+  <group>
+    <include file="$(find-pkg-share sample_launch)/launch/inside2.launch.xml"/>
+  </group>
+</launch>

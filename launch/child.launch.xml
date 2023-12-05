@@ -1,0 +1,6 @@
+<launch>
+  <arg name="foo" default="child_foo"/>
+  <arg name="bar" default="child_bar"/>
+  <log message="$(var foo)"/>
+  <log message="$(var bar)"/>
+</launch>
